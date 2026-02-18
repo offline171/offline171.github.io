@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BaseHead from '../components/base_head.astro';
+import Header from '../components/header.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Izzy Stein Resume</title>
+    </head>
+    <style>
+        .pdf, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <body>
+        <iframe class="pdf" src="/pdfs/izzy-stein-resume.pdf" width="800" height="500">
+        </iframe>
+    </body>
+</html>

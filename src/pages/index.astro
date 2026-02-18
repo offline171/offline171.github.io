@@ -1,7 +1,6 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Welcome from '../components/Welcome.astro';
+import BaseHead from '../components/base_head.astro';
+import Header from '../components/header.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import Layout from '../layouts/Layout.astro';
 
@@ -15,6 +14,29 @@ import Layout from '../layouts/Layout.astro';
 	</head>
 	<body>
 		<Header />
-		<Welcome />
+		<main>
+			<div class="index" id="index">
+				<h1>Izzy Stein</h1>
+				<h2>Computer Science Major for Bachelor of Science at Rensselaer Polytechnic Institute</h2>
+			</div>
+			<div class="about" id="about">
+				<h1>About</h1>
+				<p>
+					about filler
+				</p>
+			</div>
+			<div class="projects" id="projects">
+				<h1>Projects</h1>
+				<p>
+					projects filler
+				</p>
+			</div>
+			<div class="blog" id="blog">
+				<h1>Blog</h1>
+				<p>
+					blog filler
+				</p>
+			</div>
+		</main>
 	</body>
 </html>
