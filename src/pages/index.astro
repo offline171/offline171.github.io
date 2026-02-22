@@ -1,5 +1,5 @@
 ---
-import baseHead from '../components/base_head.astro';
+import base_head from '../components/base_head.astro';
 import header from '../components/header.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
@@ -9,10 +9,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<base_head title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<Header />
+		<header />
 		<main>
 			<div class="index" id="index">
 				<h1>Izzy Stein</h1>
