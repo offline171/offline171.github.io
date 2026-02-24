@@ -1,5 +1,5 @@
 ---
-import header_link from './header_link.astro';
+import HeaderLink from './header_link.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
@@ -7,10 +7,16 @@ import { SITE_TITLE } from '../consts';
     <nav>
         <h2><a href="/">{SITE_TITLE}</a></h2>
         <div class="internal-links">
-            <header_link href="#index">Home</header_link>
-            <header_link href="#about">About</header_link>
-            <header_link href="#projects">Projects</header_link>
-            <header_link href="#blog">Blog</header_link>
+            <HeaderLink href="#index">Home</HeaderLink>
+            <HeaderLink href="#about">About</HeaderLink>
+            <HeaderLink href="#projects">Projects</HeaderLink>
+            <HeaderLink href="#blog">Blog</HeaderLink>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/offline171" target="_blank">
+                <span class="sr-only">Github</span>
+                <img src="/icons/github.svg" alt="GitHub" width="24" height="24" />
+            </a> 
         </div>
     </nav>
 </header>
