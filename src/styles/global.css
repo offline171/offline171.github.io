@@ -46,6 +46,22 @@ body {
     line-height: 1.7;
 }
 
+.index {
+    padding-top: 156px;
+}
+
+.about {
+    padding-top: 156px;
+}
+
+.projects {
+    padding-top: 156px;
+}
+
+.blog {
+    padding-top: 156px;
+}
+
 main {
     width: 720px;
     max-width: calc(100% - 2em);
